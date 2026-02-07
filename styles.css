@@ -1,3 +1,4 @@
+
 /* ================= BASE ================= */
 *{
   margin:0;
@@ -1085,20 +1086,3 @@ a.wa-float:hover{
   padding-top: 110px;
   padding-bottom: 110px;
 }
-/* ===== PAKSA TEMA SELALU PUTIH (GLOBAL) ===== */
-:root {
-  color-scheme: light;
-}
-
-/* Paksa background & teks default */
-html, body {
-  background: #ffffff !important;
-  color: #000000 !important;
-}
-
-/* Cegah elemen bawaan browser berubah gelap */
-* {
-  color-scheme: light;
-}
-
-
