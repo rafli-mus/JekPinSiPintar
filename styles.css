@@ -1,3 +1,54 @@
+/* ===== PAKSA WEBSITE SELALU LIGHT MODE ===== */
+
+/* 1️⃣ Matikan skema warna gelap */
+:root {
+  color-scheme: light;
+}
+
+/* 2️⃣ Paksa background utama putih */
+html, body {
+  background: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 3️⃣ Paksa SEMUA elemen dasar tetap putih */
+body,
+section,
+div,
+main,
+header,
+footer,
+nav,
+input,
+textarea,
+select,
+button,
+form,
+article,
+aside {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
+/* 4️⃣ Cegah warna abu-abu di input (khusus iPhone) */
+input, textarea, select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #ffffff !important;
+}
+
+/* 5️⃣ KUNCI MATI DARK MODE SISTEM (PALING PENTING) */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  body * {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+}
 /* ================= BASE ================= */
 *{
   margin:0;
@@ -1100,3 +1151,4 @@ html, body {
 * {
   color-scheme: light;
 }
+
