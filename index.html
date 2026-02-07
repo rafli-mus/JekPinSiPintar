@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JekPinSiPintar</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+  <img src="img/logo.png" alt="Logo JekPinSiPintar" class="logo-navbar">
+  <span class="brand-text">JekPinSiPintar</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link" href="#services">Layanan</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO BARU (KONSEP MIRIP GAMBAR) -->
+<section class="hero-strip">
+  <div class="hero-overlay"></div>
+
+  <div class="container position-relative">
+    <div class="row">
+      <div class="col-lg-7">
+        <p class="hero-label">SMART SERVICE SOLUTION</p>
+        <h1 class="hero-title">
+          Cepat, Pintar,<br>dan Bisa Diandalkan
+        </h1>
+        <p class="hero-desc">
+          Layanan ojek, angkut barang, bersih-bersih, laundry, jastip, IT, 
+          hingga bantuan online — semua dalam satu platform terpercaya.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#services" class="btn btn-tohelp">Layanan Kami →</a>
+          <a href="#about" class="btn btn-outline-light ms-3">Tentang Kami →</a>
+        </div>
+    </div>
+  </div>
+</section>
+<section class="feature-cards">
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-3">
+        <div class="feature-box">
+          <h6>Kemitraan Inklusif</h6>
+          <p>Peluang kerja dengan sistem adil.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="feature-box">
+          <h6>Teknologi Canggih</h6>
+          <p>Sistem digital memudahkan layanan.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="feature-box">
+          <h6>Dampak Sosial</h6>
+          <p>Membantu masyarakat lewat layanan.</p>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="feature-box">
+          <h6>Pendapatan Pasif</h6>
+          <p>Peluang penghasilan tambahan.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+
+      <!-- KIRI: FOTO -->
+      <div class="col-lg-6 text-center">
+        <img src="img/kami.png" class="about-img" alt="Tentang JekPin">
+      </div>
+
+      <!-- KANAN: TEKS -->
+      <div class="col-lg-6">
+        <h2 class="about-title">Tentang JekPinSiPintar</h2>
+        <p class="about-text">
+          JekPinSiPintar hadir sebagai solusi cepat dan pintar untuk membantu
+          berbagai kebutuhan harian Anda.
+        </p>
+        <p class="about-text">
+          Kami mengutamakan kecepatan, keamanan, dan kenyamanan pelanggan
+          dengan tenaga profesional yang siap membantu kapan saja.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Layanan Preview -->
+<section id="services" class="services py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="mb-2">Layanan Kami</h2>
+    <p class="layanan-hint">
+      Klik salah satu layanan di bawah  
+      <span class="hint-arrow">↓</span>
+    </p>
+
+    <div class="row g-4">
+
+      <!-- Ojek -->
+      <div class="col-6 col-md-3">
+        <a href="ojek.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/ojek.png" alt="Ojek">
+          </div>
+        </a>
+      </div>
+
+      <!-- Angkut Barang -->
+      <div class="col-6 col-md-3">
+        <a href="angkutbarang.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/angkutbarang.png" alt="Angkut Barang">
+          </div>
+        </a>
+      </div>
+
+      <!-- Bersih-bersih -->
+      <div class="col-6 col-md-3">
+        <a href="bersih.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/bersih.png" alt="Bersih-Bersih">
+          </div>
+        </a>
+      </div>
+
+      <!-- Jastip -->
+      <div class="col-6 col-md-3">
+        <a href="jastip.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/jastip.png" alt="Jastip">
+          </div>
+        </a>
+      </div>
+
+      <!-- Daily Activity -->
+      <div class="col-6 col-md-3">
+        <a href="daily-activity.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/daily-activity.png" alt="Daily Activity">
+          </div>
+        </a>
+      </div>
+
+      <!-- Laundry -->
+      <div class="col-6 col-md-3">
+        <a href="laundry.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/laundry.png" alt="Laundry">
+          </div>
+        </a>
+      </div>
+
+      <!-- All Service -->
+      <div class="col-6 col-md-3">
+        <a href="service.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/service.png" alt="All Service">
+          </div>
+        </a>
+      </div>
+
+      <!-- Editing -->
+      <div class="col-6 col-md-3">
+        <a href="editing.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/editing.png" alt="Editing">
+          </div>
+        </a>
+      </div>
+
+      <!-- Bantuan Online -->
+      <div class="col-6 col-md-3">
+        <a href="bantuanonline.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/bantuanonline.png" alt="Bantuan Online">
+          </div>
+        </a>
+      </div>
+
+      <!-- Joki Tugas -->
+      <div class="col-6 col-md-3">
+        <a href="jokitugas.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/jokitugas.png" alt="Joki Tugas">
+          </div>
+        </a>
+      </div>
+
+      <!-- Teknisi -->
+      <div class="col-6 col-md-3">
+        <a href="teknisi.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/teknisi.png" alt="Teknisi">
+          </div>
+        </a>
+      </div>
+
+      <!-- Spa -->
+      <div class="col-6 col-md-3">
+        <a href="spa.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/spa.png" alt="Spa">
+          </div>
+        </a>
+      </div>
+
+      <!-- Jasa IT -->
+      <div class="col-6 col-md-3">
+        <a href="it.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/it.png" alt="Jasa IT">
+          </div>
+        </a>
+      </div>
+
+      <!-- Jasa Nemenin -->
+      <div class="col-6 col-md-3">
+        <a href="jasanemenin.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/jasanemenin.png" alt="Jasa Nemenin">
+          </div>
+        </a>
+      </div>
+
+      <!-- UMKM -->
+      <div class="col-6 col-md-3">
+        <a href="umkm.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/umkm.png" alt="UMKM">
+          </div>
+        </a>
+      </div>
+
+            <!-- UMKM -->
+      <div class="col-6 col-md-3">
+        <a href="dukungan.html" class="service-link">
+          <div class="service-card p-4 text-center">
+            <img src="img/dukungan.png" alt="Jasa Dukungan">
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section id="testimonials" class="testimonials">
+  <div class="container">
+
+    <h2 class="text-center mb-2">Testimoni</h2>
+    <p class="layanan-hint text-center mb-4">
+      Geser untuk melihat testimoni lainnya →
+    </p>
+
+    <!-- ===== HASIL TESTIMONI (CAROUSEL) ===== -->
+    <div class="swiper testimonial-swiper">
+      <div class="swiper-wrapper" id="testimonialWrapper">
+
+        <!-- CONTOH CARD (MASUK DI DALAM SWIPER) -->
+        <div class="swiper-slide">
+          <div class="testimonial-card-new">
+            <div class="testimonial-avatar">
+              <img src="img/foto1.png" alt="User">
+            </div>
+
+            <h6>Rafli Musthofa</h6>
+
+            <div class="testimonial-stars-result">
+              ★ ★ ★ ★ ★
+            </div>
+
+            <p>
+              “Pelayanan cepat, ramah, dan sangat membantu. Pasti pakai lagi!”
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- titik pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- ===== END CAROUSEL ===== -->
+
+    <!-- ===== FORM TESTIMONI (DI BAWAH) ===== -->
+    <div class="testimonial-form-new">
+
+      <h4 class="form-title">Bagikan Pengalamanmu</h4>
+      <p class="form-subtitle">
+          ⭐
+      </p>
+
+      <div class="form-group">
+        <label>Nama</label>
+        <input type="text" id="name" placeholder="Masukkan nama Anda">
+      </div>
+
+      <div class="form-group">
+        <label>Foto Profil</label>
+        <input type="file" id="photo" accept="image/*">
+      </div>
+
+      <div class="form-group">
+        <label>Ulasan</label>
+        <textarea id="message" rows="4"
+          placeholder="Tulis testimoni Anda di sini..."></textarea>
+      </div>
+
+      <div class="rating-wrapper">
+        <label>Berikan rating</label>
+        <div class="rating-input">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+      </div>
+
+      <button onclick="addTestimonial()" class="btn-submit-new">
+        Kirim Testimoni
+      </button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Kontak -->
+ <section id="contact" class="footer-info">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- LAYANAN -->
+     <div class="col-md-4">
+    <h5 class="footer-title">Layanan</h5>
+    <ul class="footer-list footer-links">
+        <li>
+        <a href="ojek.html">Ngojek</a>
+        </li>
+        <li>
+        <a href="bersih.html">Bersih-Bersih</a>
+        </li>
+        <li>
+        <a href="angkutbarang.html">Angkut Barang</a>
+        </li>
+        <li>
+        <a href="service.html">Lain-lain</a>
+        </li>
+    </ul>
+    </div>
+
+
+      <!-- KONTAK -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Kontak</h5>
+        <ul class="footer-contact">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            RPHF+H99, Tegal Boto Kidul, Sumbersari,
+            Kabupaten Jember, Jawa Timur 68121
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jekpinsipintar@gmail.com">
+              jekpinsipintar@gmail.com
+            </a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="https://wa.me/6285748542321" target="_blank">
+              0857-4854-321
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- MEDIA SOSIAL -->
+      <div class="col-md-4">
+        <h5 class="footer-title">Media Sosial</h5>
+        <ul class="footer-social">
+          <li>
+            <i class="fab fa-instagram"></i> @jekpinsipintar
+          </li>
+          <li>
+            <i class="fab fa-tiktok"></i> JekPinSiPintar
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Floating -->
+<a href="https://wa.me/6285748542321" class="wa-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Footer -->
+ <footer class="footer-main">
+  <div class="container text-center">
+    <p>© 2026 JekPinSiPintar. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<!-- Custom JS -->
+<script src="script.js"></script>
+</body>
+</html>

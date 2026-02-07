@@ -1,0 +1,647 @@
+/* ======================================================
+   SERVICE CONTENT ONLY
+   Navbar & Footer pakai styles.css
+====================================================== */
+
+/* WRAPPER */
+.service-content{
+  padding:90px 20px 60px; /* aman dari navbar */
+  background:#f9fafb;
+}
+
+/* JUDUL */
+.service-content h1{
+  font-size:2.2rem;
+  font-weight:700;
+  color:#004d40;
+  margin-bottom:.8rem;
+}
+
+/* DESKRIPSI */
+.service-content p{
+  font-size:1rem;
+  color:#4b5563;
+  line-height:1.7;
+  margin-bottom:1.2rem;
+}
+
+/* GAMBAR */
+.service-content img{
+  border-radius:18px;
+  box-shadow:0 10px 28px rgba(0,0,0,.15);
+  margin-bottom:1.5rem;
+}
+
+/* LIST */
+.service-content ul{
+  list-style:none;
+  padding:0;
+  margin:0 0 1.5rem;
+}
+
+.service-content ul li{
+  position:relative;
+  padding-left:26px;
+  margin-bottom:.7rem;
+  font-size:.95rem;
+  color:#374151;
+}
+
+.service-content ul li::before{
+  content:"✓";
+  position:absolute;
+  left:0;
+  top:0;
+  color:#28a745;
+  font-weight:700;
+}
+
+/* CTA */
+.service-content .btn{
+  background:#28a745;
+  border:none;
+  border-radius:50px;
+  padding:.6rem 1.6rem;
+  font-weight:600;
+}
+
+.service-content .btn:hover{
+  background:#1e7e34;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .service-content{
+    padding:80px 16px 50px;
+  }
+
+  .service-content h1{
+    font-size:1.9rem;
+  }
+}
+/* ===== PEMISAH MOTOR & MOBIL ===== */
+.price-group{
+  margin-bottom: 12px;
+}
+
+.price-group h6{
+  color:#004d40;
+  font-weight:700;
+  margin-bottom:6px;
+  font-size:1rem;
+}
+/* ========== HARGA VERSI MODERN ========== */
+.service-price-box.modern{
+  margin-top: 18px;
+  padding: 18px;
+  background:#ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+  border-left: 6px solid #28a745;
+}
+
+/* Judul harga */
+.price-title{
+  color:#004d40;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.price-subtitle{
+  font-size:.9rem;
+  color:#6b7280;
+  margin-bottom:12px;
+}
+
+/* Layout dua kolom */
+.price-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* Card harga */
+.price-card{
+  background:#f4fbf9;
+  border-radius: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e5f2ee;
+  transition:.3s;
+}
+
+.price-card:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,.12);
+}
+
+/* Header card */
+.price-header{
+  font-weight:700;
+  color:#004d40;
+  margin-bottom:6px;
+}
+
+/* List harga rapi */
+.price-card .price-list{
+  list-style:none;
+  padding:0;
+  margin:0 0 6px 0;
+}
+
+.price-card .price-list li{
+  display:flex;
+  justify-content:space-between;
+  font-size:.95rem;
+  margin-bottom:4px;
+}
+
+/* Catatan kecil di card */
+.price-note-sm{
+  font-size:.85rem;
+  color:#6b7280;
+}
+
+/* Catatan bawah */
+.price-note{
+  font-size:.85rem;
+  color:#6b7280;
+  margin:8px 0 0;
+}
+
+/* RESPONSIVE: jadi 1 kolom di HP */
+@media(max-width:768px){
+  .price-grid{
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== JARAK ANTARA KOTAK HARGA & TOMBOL ===== */
+.service-price-box.modern{
+  margin-bottom: 22px;   /* jarak ke tombol */
+}
+/* ===== GRID 4 KOLOM UNTUK ANGKUT BARANG ===== */
+.price-grid.four-cols{
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+  .price-grid.four-cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 576px){
+  .price-grid.four-cols{
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== GRID 3 KOLOM UNTUK JASTIP ===== */
+.price-grid.three-cols{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 992px){
+  .price-grid.three-cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 576px){
+  .price-grid.three-cols{
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== GRID 5 KOLOM UNTUK DAILY ACTIVITY ===== */
+.price-grid.five-cols{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1200px){
+  .price-grid.five-cols{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 768px){
+  .price-grid.five-cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 576px){
+  .price-grid.five-cols{
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== GRID 6 KOLOM UNTUK ALL SERVICE ===== */
+.price-grid.six-cols{
+  display:grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 1200px){
+  .price-grid.six-cols{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(max-width: 768px){
+  .price-grid.six-cols{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 576px){
+  .price-grid.six-cols{
+    grid-template-columns: 1fr;
+  }
+}
+.price-grid.five-cols{
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+@media(max-width: 1200px){
+  .price-grid.five-cols{ grid-template-columns: repeat(3, 1fr); }
+}
+
+@media(max-width: 768px){
+  .price-grid.five-cols{ grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 576px){
+  .price-grid.five-cols{ grid-template-columns: 1fr; }
+}
+/* ===== GAYA KHUSUS SPA (BERBEDA DARI HALAMAN LAIN) ===== */
+.spa-menu{
+  margin-top: 10px;
+}
+
+.spa-item{
+  background:#ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+  border-left: 5px solid #28a745; /* warna berbeda: soft */
+}
+
+.spa-title{
+  font-weight:700;
+  color:#004d40;
+  font-size:1rem;
+}
+
+.spa-info{
+  font-size:.9rem;
+  color:#374151;
+  margin:4px 0;
+}
+
+.spa-desc{
+  font-size:.9rem;
+  color:#6b7280;
+  margin:0;
+}
+
+/* Langkah pemesanan (beda konsep) */
+.spa-steps{
+  padding-left: 18px;
+}
+
+.spa-steps li{
+  margin-bottom: 6px;
+  font-size:.95rem;
+}
+/* ===== DESAIN KHUSUS JASA IT (BEDA KONSEP) ===== */
+.it-panel{
+  margin-top: 8px;
+}
+
+.it-item{
+  background:#ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+
+  /* 👉 WARNA SAMPING TETAP HIJAU SESUAI BRAND */
+  border-left: 5px solid #28a745;
+}
+
+.it-header{
+  font-weight:700;
+  color:#004d40;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.it-badge{
+  font-size:.75rem;
+  background:#e6f4f1;
+  color:#004d40;
+  padding:4px 8px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+.it-body p{
+  margin:6px 0 4px;
+  font-size:.95rem;
+  color:#4b5563;
+}
+
+.it-meta{
+  font-size:.9rem;
+  color:#374151;
+}
+
+.it-note{
+  font-size:.9rem;
+  color:#6b7280;
+}
+/* ===== DESAIN KHUSUS JASA NEMENIN (ANAK MUDA) ===== */
+.nemenin-panel{
+  margin-top: 8px;
+}
+
+.nemenin-item{
+  background:#ffffff;
+  border-radius: 14px;
+  padding: 14px 16px;
+  margin-bottom: 10px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.08);
+
+  /* 👉 GARIS SAMPING TETAP HIJAU (SAMA DENGAN BRAND) */
+  border-left: 5px solid #28a745;
+}
+
+.nemenin-header{
+  font-weight:700;
+  color:#004d40;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.nemenin-badge{
+  font-size:.75rem;
+  background:#e6f4f1;
+  color:#004d40;
+  padding:4px 8px;
+  border-radius:20px;
+  font-weight:600;
+}
+
+.nemenin-desc{
+  margin:6px 0 4px;
+  font-size:.95rem;
+  color:#4b5563;
+}
+
+.nemenin-meta{
+  font-size:.9rem;
+  color:#374151;
+}
+
+.nemenin-note{
+  font-size:.9rem;
+  color:#6b7280;
+}
+/* ========== DESKTOP LAYOUT BARU (HARGA DI KANAN) ========== */
+@media (min-width: 992px){
+
+  .service-content{
+    padding: 120px 0 100px;
+    background: linear-gradient(180deg, #f4fbf9, #ffffff);
+  }
+
+  /* === UBAH ROW JADI 2 KOLOM FLEX === */
+  .service-content .row{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  /* ===== KIRI = TEKS ===== */
+  .service-content .col-md-6:first-child{
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  /* ===== PINDAHKAN PANEL HARGA KE KANAN ===== */
+  .service-price-box.modern{
+    position: relative;
+    margin-top: 0;                 /* jangan turun ke bawah */
+    flex: 1;
+    padding: 32px 34px;
+    border-radius: 26px;
+    background: #f2fbf8;
+    box-shadow: 0 12px 35px rgba(0,0,0,.12);
+    border-left: 8px solid #28a745;
+  }
+
+  /* Judul panel */
+  .price-title{
+    font-weight: 700;
+    color:#004d40;
+    margin-bottom: 6px;
+  }
+
+  .price-subtitle{
+    color:#6b7280;
+    margin-bottom: 18px;
+  }
+
+  /* === GRID 2 KARTU (MOTOR & MOBIL) === */
+  .price-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .price-card{
+    background:white;
+    padding: 20px 22px;
+    border-radius: 18px;
+    box-shadow: 0 8px 22px rgba(0,0,0,.08);
+  }
+
+  .price-header{
+    font-weight: 700;
+    color:#004d40;
+    margin-bottom: 12px;
+  }
+
+  .price-list li{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background:#f4fbf9;
+    padding: 10px 14px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+  }
+
+  .price-note-sm{
+    font-size:.9rem;
+    color:#6b7280;
+    margin-top: 8px;
+  }
+
+  .price-note{
+    margin-top: 16px;
+    font-size:.9rem;
+    color:#6b7280;
+  }
+
+  /* ===== TOMBOL TETAP DI BAWAH TEKS (KIRI) ===== */
+  .service-content .btn-success,
+  .service-content .btn-secondary{
+    margin-top: 18px;
+  }
+}
+/* ===== KOTAK MAP A ===== */
+.map-box{
+  background:#ffffff;
+  padding:18px 20px;
+  border-radius:18px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.12);
+  border-left: 6px solid #28a745;
+}
+
+.map-title{
+  color:#004d40;
+  font-weight:700;
+  margin-bottom:4px;
+}
+
+.map-subtitle{
+  font-size:.9rem;
+  color:#6b7280;
+  margin-bottom:10px;
+}
+/* ===== STYLE TOMBOL SHARE (TEKS PUTIH) ===== */
+.share-btn {
+  padding: .6rem 1rem;
+  border-radius: 50px;
+  font-size: .95rem;
+  min-width: 90px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;      /* tetap hijau tombol */
+  color: #ffffff;           /* 👉 teks jadi PUTIH */
+  border: none;
+}
+
+/* efek hover */
+.share-btn:hover {
+  background: #ffffff;
+  color: #6b7280;
+}
+
+/* samakan tinggi input & tombol */
+.share-wrapper input {
+  height: 38px;
+}
+/* ===== PERBESAR & PERINDAH MAP ===== */
+.map-box iframe{
+  box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  transition: .3s ease;
+}
+
+.map-box iframe:hover{
+  transform: translateY(-2px);
+}
+
+/* jarak antar section biar lega */
+.map-box{
+  margin-bottom: 28px;
+}
+/* ===== LAYOUT MAP + FORM: 2 KOLOM DI DESKTOP ===== */
+@media (min-width: 992px){
+  .map-price-wrapper{
+    align-items: flex-start;
+  }
+
+  /* biar form tidak terlalu menempel ke map */
+  .map-price-wrapper .map-box{
+    height: 100%;
+  }
+}
+
+/* di HP tetap vertikal */
+@media (max-width: 991px){
+  .map-price-wrapper{
+    flex-direction: column;
+  }
+}
+/* supaya aturan .service-content .row tidak merusak layout map */
+@media (min-width: 992px){
+  .map-price-wrapper{
+    display: flex !important;
+  }
+}
+@media (min-width: 992px){
+  .map-price-wrapper{
+    display: flex !important;
+  }
+}
+/* ===== AUTOCOMPLETE MINI (MIRIP GOOGLE) ===== */
+#suggestions {
+  position: absolute;
+  top: calc(100% + 4px);   /* nempel pas di bawah input */
+  left: 0;
+  width: 100%;             /* hanya selebar input */
+  max-height: 220px;       /* batasi tinggi */
+  overflow-y: auto;        /* bisa di-scroll */
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+  border-radius: 10px;
+  padding: 4px 0;
+  z-index: 9999;
+}
+
+/* item jadi lebih kecil & ringkas */
+#suggestions li {
+  list-style: none;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  line-height: 1.2;
+  cursor: pointer;
+  color: #374151;
+}
+
+/* hover halus */
+#suggestions li:hover {
+  background: #eef7f5;
+}
+
+/* garis tipis antar item */
+#suggestions li + li {
+  border-top: 1px solid #f0f0f0;
+}
+
